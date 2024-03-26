@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tieude{
+            text-align: center;
+        }
+        p.top{
+            text-align: center;
+            color: blue;
+        }
+        div.tho{
+            background-color: rgb(255, 255, 141);
+        }
+        div.doan{
+           background-color: rgb(249, 159, 159);
+        }
+        p.mid{
+            color: red;
+            text-align: center;
+            border-top: 1px solid rgb(0, 85, 255);
+            border-bottom: 1px solid rgb(0, 132, 255);
+            margin: auto;
+            width: 220px;
+            padding: 20px 0px 20px;
+        }
+        p.bottom{
+            color: green;
+            text-align: center;
+            border-bottom: 1px solid rgb(56, 255, 41);
+            margin: auto;
+            width: 220px;
+            padding:0px 0px 20px;
+        }
+        p.inline{
+            display: inline;
+            color: red;
+        }
+        .column1{
+            float:left;
+            width:30%;
+        }
+        .column2{
+            float:right;
+            width:70%;
+        }
+        .row::after{
+            content: "";
+            display:table;
+            clear: both;
+
+        }
+       table,th,td{
+            border: 3px solid rgb(252, 107, 240);
+            border-collapse: collapse;
+        }
+        th{
+            color: white;
+        }
+        table#t01 tr:nth-child(odd){
+            background-color: rgb(223, 115, 115);
+        }
+        table#t01 tr:nth-child(even){
+            background-color: rgb(255, 255, 255);
+        }
+        td#td01{
+            text-align: center;
+        }
+        td{
+            padding: 5px;
+        }
+     
+    </style>
+</head>
+<body>
+    <h1 style="color: green;"class="tieude">Bài 2: Sử dụng các tag cơ bản(tt)</h1>
+    <h2 style="color: blue;"><ins>Yêu cầu</ins></h2>
+    <h4>Thiết kế trang web có nội dung như sau:</h4>
+    <p style="color: palevioletred;background-color: plum;" class="tieude">MẸ !</p>
+    <div class="tho">
+        <p class="top"> Mẹ là cả 1 trời thương <br>
+            Mẹ là cả một thiên đường trần gian <br>
+            công ơn cha mẹ tựa biển trời
+        </p>
+        <br>
+        
+        <p class="mid" >
+            Làm sao báo hiếu hỡi người ơi <br>
+            Nếu chưa báo hiếu đừng bất hiểu <br>
+            Bất hiếu làm ta khổ muôn đời
+        </p>
+        <br>
+       <p class="bottom" >
+        Một đời vốn liếng mẹ trao <br>
+        Mẹ cho tất cả mẹ nào giữ riêng <br>
+        Mẹ hiên như 1 bà tiên Mẹ theo con suốt hành trình con đi</p>
+    </div>
+    
+    <h1 style="color: green;" class="tieude">Định danh văn bản</h1>
+   <div><b><ins>Hóa học: </ins></b>Nước: <p class="inline">H<sub>2</sub>O </p>; Axit sunfuric: <p class="inline">H<sub>2</sub>SO<sub>4</sub></p></div>
+    <div><b><ins>Toán học: </ins></b>Phương trình bậc 2: <p class="inline">ax<sup>2</sup>+ bx + c = 0</p></div>
+    <p><b><ins>Tin học: </ins></b>Vòng lặp For:</p>
+    <div style="background-color: gray;">
+        <p style="padding-left: 300px;">For i=0 To 10</p>
+        <p style="padding-left: 350px;">Tong = Tong +1</p>
+        <p style="padding-left: 300px;">Next</p>
+    </div>
+    <div class="row">
+        <img src="https://th.bing.com/th/id/OIP.qL7rB9g5VSbrkhdFbOtJogHaHa?rs=1&pid=ImgDetMain" alt="" class="column1">
+        <div  class="column2">
+            <h1 style="color: pink;">Công ty Hoa tươi Nhân Ái</h1>
+            <ol>
+                <li>Giới thiệu</li>
+                <ul>
+                    <li>Thành lập ngày 25/05/2007</li>
+                    <li>Chuyên cung cấp các loại hoa tươi</li>
+                    <li>Có trên 20 cửa hàng bán lẻ tại TP HCM</li>
+                    <li style="border-bottom: 1px solid black;width: 300px;">Nhận kết giỏ hoa theo yêu cầu của khách hàng</li>
+                </ul>
+                <li>Liên hệ</li>
+                    <li>• Điện thoại: 987654321</li>
+                    <li>Địa chỉ: 227 Nguyễn Văn Cừ</li>
+            </ol>
+            <p>@ Copyright <a href="#">Trung Tâm Tin Học - Đại Học Khoa Học Tự Nhiên TP,HCM</a></p>
+        </div>
+    </div>
+
+    <div class="doan" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvcZJuPFBzoMRHQwKLLsSZormEGMUCLcLdCIx4_6M0HT6re8k7" alt=""  style="padding-top: 80px;float: left;" >
+        
+            <h1>Các món ngon Hà Nội</h1>
+            <table  style="margin-left:200px;border-color: blueviolet;" id="t01">
+                <tr>
+                    <th>STT</th>
+                    <th>Tên món ăn</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Bánh cuốn Thanh Trì</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Xôi Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Chả cá Lã Vọng</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Cháo cốc</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bánh gai Ninh Giang</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Bún Thang Hà Nội</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Canh Lắng</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Vịt quay Lạng Sơn</td>
+                </tr>
+            </table>
+    </div>
+
+    <div>
+        <h1>Chương trình học - ngành lập trình</h1>
+        <table>
+            <tr style="background-color: red;">
+                <th rowspan="2">Nhóm học phần</th>
+                <th rowspan="2">Môn học</th>
+                <th colspan="2">Số tiết</th>
+            </tr>
+            <tr style="background-color: red;">
+                <th>Lý thuyết</th>
+                <th>Thực Hành</th>
+            </tr>
+            <tr>
+                <th style="color: red;" rowspan="6">I <br>Tin học văn phòng</th>
+                <td>Hệ điều hành windows</td>
+                <td id="td01">3</td>
+                <td id="td01">5</td>
+            </tr>
+            <tr>
+                <td>Sử dụng internet</td>
+                <td id="td01">3</td>
+                <td id="td01">5</td>
+            </tr>
+            <tr>
+                <td>Soạn thảo văn bản với MS Word</td>
+                <td id="td01">24</td>
+                <td id="td01">40</td>
+            </tr>
+            <tr>
+                <td>Tạo bài trình diễn với MS Power Point</td>
+                <td id="td01">9</td>
+                <td id="td01">15</td>
+            </tr>
+            <tr>
+                <td>Xử lý số liệu với MS Excel</td>
+                <td id="td01">24</td>
+                <td id="td01">40</td>
+            </tr>
+            <tr>
+                <td>Tạo trang web vs Ms Fontpage</td>
+                <td id="td01">9</td>
+                <td id="td01">15</td>
+            </tr>
+            <tr>
+                <th style="color: red;" rowspan="2">II <br>Kỹ thuật lập trình (VB.NET)</th>
+                <td>Nhập môn lập trình</td>
+                <td id="td01">36</td>
+                <td id="td01">60</td>
+            </tr>
+
+            <tr>
+                <td>Kỹ thuật lập trình</td>
+                <td id="td01">36</td>
+                <td id="td01">60</td>
+            </tr>
+         
+        </table>
+    </div>
+
+    <div>
+        <h1>
+            Phiếu đăng ký tham gia chương trình khuyến mại
+        </h1>
+        <table>
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text" placeholder="Nhập họ tên"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text" placeholder="Nhập địa chỉ"></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="text" placeholder="Nhập điện thoại"></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td><input type="radio" >Nam <input type="radio">Nữ</td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td><select name="" id="">
+                    <option value="Giáo viên">Giáo viên</option>
+                    <option value="Kỹ sư">Kỹ sư</option>
+                    <option value="Ca sỹ">Ca sỹ</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Chọn sản phẩm tham gia</td>
+                <td><select name="" id="" size="4" multiple>
+                    <option value="Kem đánh răng">Kem đánh răng</option>
+                    <option value="Bột giặt">Bột giặt</option>
+                    <option value="Dầu gội đầu">Dầu gội đầu</option>
+                    <option value="Sữa tắm">Sữa tắm</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Số người dự đoán tham gia</td>
+                <td><input type="text" placeholder="25000"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Đồng ý"></td>
+            </tr>
+        </table>
+    </div>
+   
+    <div>
+        <h4 style="color: blue;">I. Đọc sách giúp rèn luyện ngôn ngữ.</h4>
+        <p style="width: 700px;"><b>Vốn</b> từ ngữ được mở rộng Điều này đi liền với lợi ích 3: bạn đọc càng nhiều, càng được tiếp xúc với nhiều từ ngữ, chắc chắn rằng tất cả sẽ đi vào vốn từ vựng hàng ngày của bạn. Ăn nói lưu loát và khéo léo giúp ích rất nhiều trong bất kỳ ngành nghề nào, và nếu bạn có thể nói chuyện với sự tự tin có nghĩa là lòng tự trọng của bạn đã được nâng cao lên rất nhiều. Điều này thậm chí có thể hỗ trợ rất tốt cho sự nghiệp của bạn, như những người đọc nhiều hiểu rộng, ăn nói khéo léo, và am hiểu về nhiều chủ đề có khuynh hướng được thăng chức nhanh hơn (và thường xuyên hơn) so với những người có vốn từ vựng hạn chế và thiếu nhận thức về văn học, đột phá khoa học, hay các sự kiện toàn cầu. Đọc sách cũng rất quan trọng cho việc học một ngôn ngữ mới, như khi bạn tiếp xúc với nhiều từ ngữ được sử dụng trong từng bối cảnh cụ thể, sẽ cải thiện kỹ năng nói và viết của mình lưu loát hơn.</p>
+        <h4 style="color: blue;">II. Bài kết thúc</h4>
+        <p style="width: 700px;"><b>Cải thiện trí nhớ:</b> Khi bạn đọc một cuốn sách, bạn phải nhớ từng nhân vật, nguồn gốc của họ, tham vọng, lịch sử, và sắc thái, cũng như các chi tiết liên quan đến nhân vật trong mỗi câu chuyện. Những điều này khá nhiều để nhớ, nhưng não là một bộ phận tuyệt vời, nó có thể nhớ tất cả tương đối dễ dàng. Thật ngạc nhiên, mỗi bộ nhớ mới mà bạn tạo ra sẽ liên hợp với các khớp thần kinh mới (chuỗi phản ứng hóa sinh trong não bộ) và tăng cường những cái hiện có, hỗ trợ trí nhớ ngắn hạn cũng như giữ thăng bằng tâm trạng.</p>
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_Joty9RLavyYfK_Ti-4eUAMdIJ1EVdwocY9iPN37tdrsfUUe0" alt=""  width="800px" height="500px" style="padding: 0px;">
+    </div>
+</body>
+</html>
