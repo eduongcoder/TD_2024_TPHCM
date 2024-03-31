@@ -19,5 +19,19 @@ create table Account(
     foreign key (PositionID) references DepartmentName(PositionID),
     foreign key (DepartmentID) references Department(DepartmentID)
 );
+create table Groupp(
+	GroupID int auto_increment primary key,
+    GroupName varchar(30),
+    CreateID int,
+    CreateDate date
+);
+create table GroupAccount(
+	GroupID int ,
+    AccountID int,
+    CreateDate date,
+    foreign key (GroupID) references Groupp(GroupID),
+    foreign key (AccountID) references Account(AccountID)
+
+);
 
 
